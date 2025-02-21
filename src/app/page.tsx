@@ -74,29 +74,29 @@ export default function Home() {
     <main>
 
       
-      <div className="header_placeholder">
-      <h1 className="indent">NOW SERVING AWS APPLICANTS</h1>
-      <h1 className="indent_right">FEB 19-24, 2024</h1>
-      <h4 className="indent">LEARN AND UPSKILL</h4>
-      <h6 className="indent_white">DEVELOPED BY AWS DEVELOPERS</h6>
+      <div className="header">
+      <h1 className="header__indent">NOW SERVING AWS APPLICANTS</h1>
+      <h1 className="header__indent--right">FEB 19-24, 2024</h1>
+      <h4 className="header__indent">LEARN AND UPSKILL</h4>
+      <h6 className="header__indent--white">DEVELOPED BY AWS DEVELOPERS</h6>
       <br />
       </div>
 
-      <div className="fillup_form">
+      <div className="fillup-form">
 
-        <h5 className="label"><strong>Enter your Full Name</strong></h5>
+        <h5 className="fillup-form__label"><strong>Enter your Full Name</strong></h5>
         
         
-        <Input type="name" placeholder="Juan T. Cruz" className="padleft"/>
+        <Input type="name" placeholder="Juan T. Cruz" className="fillup-form__input-container"/>
 
-        <h5 className="label"><strong>Email:</strong></h5>
+        <h5 className="fillup-form__label"><strong>Email:</strong></h5>
         
 
-        <Input type="email" placeholder="juantamad@gmail.com" className="padleft"/>
+        <Input type="email" placeholder="juantamad@gmail.com" className="fillup-form__input-container"/>
 
-        <h5 className="label"><strong>School:</strong></h5>
+        <h5 className="fillup-form__label"><strong>School:</strong></h5>
        
-        <div className="padleft">
+        <div className="fillup-form__input-container">
           <Select>
             <SelectTrigger className="w-[180px]">
               <SelectValue placeholder="Select a School" />
@@ -118,10 +118,10 @@ export default function Home() {
 
             
 
-        <h5 className="label"><strong>Date for F2F interview</strong></h5>
+        <h5 className="fillup-form__label"><strong>Date for F2F interview</strong></h5>
         <br />
 
-        <div className="padleft">
+        <div className="fillup-form__input-container">
             <Popover>
           <PopoverTrigger asChild>
             <Button
@@ -147,7 +147,7 @@ export default function Home() {
         </div>
         <br />
 
-        <div className="padleft">
+        <div className="fillup-form__input-container">
             <AlertDialog>
           <AlertDialogTrigger asChild>
             <Button variant="outline">Submit</Button>
@@ -169,12 +169,6 @@ export default function Home() {
         </div>
 
         <br />
-        
-        
-
-
-
-
 
       </div>
     </main>
